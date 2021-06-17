@@ -1,0 +1,336 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+  /*navbar mobliel bot-nav bot-nav-link*/
+.bot-nav{
+  display: none;
+}
+@media only screen and (max-width : 600px)
+{
+  .navbar-fixed{
+    display: none;
+  }
+  body {
+    margin: 0 0 65px 0;
+  }
+  .bot-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    height: 65px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background-color: #f7f0ec;/* #06ABD1;*/
+    display: flex;
+    overflow-x: auto;
+    vertical-align: middle;
+  }
+  .bot-nav-link {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-tab-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .bot-nav-link:hover{
+    background-color: #059ac0;
+  }
+
+  .bot-nav-link i {
+    font-size: 25px;
+  }
+}
+ /**/
+body{
+  color: #3f2619;
+}
+.black-text{
+  color: #3f2619;
+}
+ .img-container{
+  position: relative;
+  font-family: "Felt That";
+  font-size: 7em!important;
+  text-transform: none;
+}
+
+
+.img-centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.img-top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.img-bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+ .navbar-fixed, nav, .nav-wrapper{
+  height: 100px!important;
+  line-height: 100px;
+}
+
+.brand-logo{
+  margin: 5px;
+}
+.brand-logo img{
+  height: 90px!important;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #3f2619;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+
+  .price table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+  .price thead tr {
+    display: none;
+
+}
+
+.price td {
+  /* Behave  like a "row" */
+  display: block!important;
+  position: relative;
+  padding-left: 40%;
+}
+
+	.price td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0px;
+		left: 6px;
+		width: 35%;
+		padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+		white-space: nowrap;
+    text-align: left;
+    font-weight: bolder;
+	}
+
+	/*
+	Label the data
+	*/
+  .price td:nth-of-type(1):before { content: "Behandlung"; }
+	td:nth-of-type(2):before { content: "Dauer"; }
+	td:nth-of-type(3):before { content: "Kosten"; }
+}
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.green-text {
+  color: #06ABD1 !important;
+}
+
+.green {
+  background-color: #06abd1 !important;
+}
+body{
+  font-family: 'brandon-grotesque', Helvetica, sans-serif;
+  text-transform: uppercase
+}
+
+li{
+  font-weight: 500;
+}
+
+.intro-text{
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  left: 5px;
+}
+
+.intro-par { width: 100%; position: relative;   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;}
+/*
+Brandon Grotesque Regular
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Brandon Grotesque Regular Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Brandon Grotesque Bold
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Brandon Grotesque Bold Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Brandon Grotesque Thin
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 100;
+
+font-style: normal;
+
+
+Brandon Grotesque Thin Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 100;
+
+font-style: italic;
+
+
+Brandon Grotesque Light
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 300;
+
+font-style: normal;
+
+
+Brandon Grotesque Light Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 300;
+
+font-style: italic;
+
+
+Brandon Grotesque Medium
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 500;
+
+font-style: normal;
+
+
+Brandon Grotesque Medium Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 500;
+
+font-style: italic;
+
+
+Brandon Grotesque Black
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 900;
+
+font-style: normal;
+
+
+Brandon Grotesque Black Italic
+
+font-family: brandon-grotesque, sans-serif;
+
+font-weight: 900;
+
+font-style: italic;
+
+*/
