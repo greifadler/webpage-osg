@@ -1,4 +1,4 @@
-/* Custom Stylesheet */
+﻿/* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -8,37 +8,93 @@
 
 
   /*navbar mobliel bot-nav bot-nav-link*/
+.covid-info{
+  display: block!important;
+}
+.covid-link a, p{
+  color: #3f2619!important;
+  font-weight: 400;
+}
+
+.covid-link a {
+  color: #ffffff!important;
+  font-weight: 400!important
+}
+
+.mobile-only{
+  display: none!important;
+}
+
 .bot-nav{
   display: none;
 }
 @media only screen and (max-width : 600px)
 {
+
+  .impressum h1{
+    font-size: 40px;
+  }
+
+  .impressum h2{
+    font-size: 32px;
+  }
+
+  .impressum h3{
+    font-size: 25px;
+  }
+
+
+  .img-centered p {
+    font-size: 0.9em;
+    line-height: 1.1!important;
+  }
+
+
+  .img-mbl{
+    display: flex!important;
+    width: 100%;
+  }
+  .img-wp {
+    display: none!important;
+  }
+
+  .img-container img {
+    overflow: hidden;
+    height: 92vh;
+  }
+
+
+  .img-centered{
+    top: 50%!important;
+  }
+
   .navbar-fixed{
     display: none;
   }
   body {
-    margin: 0 0 65px 0;
+    margin: 0 0 8vh 0;
   }
   .bot-nav {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
-    z-index: 2;
-    height: 65px;
+    z-index: 4;
+    height: 8vh;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);
     background-color: #f7f0ec;/* #06ABD1;*/
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     vertical-align: middle;
   }
   .bot-nav-link {
     display: flex;
     flex-grow: 1;
+    height: 8vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-self: center;
-    min-width: 50px;
+    min-width: 10px;
     overflow: hidden;
     white-space: nowrap;
     font-size: 12px;
@@ -51,7 +107,7 @@
   }
 
   .bot-nav-link:hover{
-    background-color: #059ac0;
+    background-color: #efdfd7;
   }
 
   .bot-nav-link i {
@@ -140,6 +196,11 @@ p {
 }
 
 @media only screen and (max-width : 600px) {
+
+  .mobile-only{
+    display: block!important;
+  }
+
   #index-banner .section {
     top: 0;
   }
@@ -197,15 +258,20 @@ footer.page-footer {
   margin: 0;
 }
 
+.impressum p, h1, h2, h3, li, a{
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
 .green-text {
-  color: #06ABD1 !important;
+  color: #00789E !important;
 }
 
 .green {
   background-color: #06abd1 !important;
 }
 body{
-  font-family: 'brandon-grotesque', Helvetica, sans-serif;
+  font-family: 'brandon-grotesque', 'Cocogoose Pro', Helvetica, sans-serif;
   text-transform: uppercase
 }
 
@@ -224,113 +290,117 @@ li{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;}
-/*
-Brandon Grotesque Regular
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
+  z-index: -1;
+}
 
 
-Brandon Grotesque Regular Italic
+  .fa {
+    font-size: 25px!important;
+    width: 50px!important;
+    height: 50px!important;
+    text-align: center!important;
+    vertical-align: middle!important;
+    line-height: 50px!important;
+    text-decoration: none!important;
+    border-radius: 50%!important;
+  }
 
-font-family: brandon-grotesque, sans-serif;
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 
-font-weight: 400;
+/* Set a specific color for each brand */
 
-font-style: italic;
-
-
-Brandon Grotesque Bold
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Brandon Grotesque Bold Italic
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 
 
-Brandon Grotesque Thin
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 100;
-
-font-style: normal;
-
-
-Brandon Grotesque Thin Italic
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 100;
-
-font-style: italic;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, 25%);
+}
 
 
-Brandon Grotesque Light
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483645;
+  box-sizing: border-box;
+  width: 100%;
 
-font-family: brandon-grotesque, sans-serif;
+  background-color: #F1F6F4;
+}
 
-font-weight: 300;
+.cookie-consent-banner__inner {     
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 10px 10px 10px;
+}
 
-font-style: normal;
+.cookie-consent-banner__copy { 
+  margin-bottom: 16px;
+}
 
+.cookie-consent-banner__actions {    
+}
 
-Brandon Grotesque Light Italic
+.cookie-consent-banner__header {
+  margin-bottom: 8px;
+  
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
 
-font-family: brandon-grotesque, sans-serif;
+.cookie-consent-banner__description {
+  font-weight: normal;
+  color: #838F93;
+  font-size: 12px;
+  line-height: 18px;
+}
 
-font-weight: 300;
+.cookie-consent-banner__cta {
+  padding: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 164px;
+    
+  border-radius: 5px;
+  
+  background-color: #00789E;
+   
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-font-style: italic;
+.cookie-consent-banner__cta--secondary { 
+  border: 2px solid #00789E;
+  padding: 0px;
+  
+  background-color: transparent;
+  color: black;
+}
 
+.cookie-consent-banner__cta:hover {
+  background-color: #00799edc;
+}
 
-Brandon Grotesque Medium
+.cookie-consent-banner__cta--secondary:hover {
+  border-color: #00799edc;
+    
+  background-color: transparent;
+}
 
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 500;
-
-font-style: normal;
-
-
-Brandon Grotesque Medium Italic
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 500;
-
-font-style: italic;
-
-
-Brandon Grotesque Black
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 900;
-
-font-style: normal;
-
-
-Brandon Grotesque Black Italic
-
-font-family: brandon-grotesque, sans-serif;
-
-font-weight: 900;
-
-font-style: italic;
-
-*/
+.cookie-consent-banner__cta:last-child {
+  margin-left: 16px;
+}

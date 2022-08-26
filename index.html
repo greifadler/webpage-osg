@@ -3,6 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Hallo! Hier findest du meine Website. Auf der Website findest du Infos über mich und meine Arbeit.">
@@ -25,32 +26,19 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://use.typekit.net/ixx1npo.css">
-
+    <link rel="stylesheet" href="css/ixx1npo.css">
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="fonts/stylesheet.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="js/_materialize.min.js"></script>
-    <style>
 
-    </style>
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id))
-                return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.12';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+
     <script>
         function scrollUpTo() {
             setTimeout('window.scrollTo(window.scrollX,window.scrollY-64);', 0);
@@ -60,7 +48,7 @@
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container  green-text">
-                <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png"></a>
+                <a id="logo-container" href="#" class="brand-logo"><img alt="Logo" src="images/logo.png"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a onclick="return scrollUpTo();" href="#">Start</a></li>
                     <li><a onclick="return scrollUpTo();" href="#leistungen">Behandlungen</a></li>
@@ -68,7 +56,7 @@
                     <li><a href="#links">Links</a></li>
                     <li><a href="impressum.html">Impressum</a></li>
                 </ul>
-              
+
             </div>
         </nav>
     </div>
@@ -96,22 +84,52 @@
     </div>
 
     <div class="img-container">
-        <img src="images/banner.jpg" width="100%" >
+        <img class="img-wp" alt="Banner - Osteopathin Sonja Greimel"src="images/banner.jpg" width="100%" >
+        <img class="img-mbl" alt="Mobiler Banner - Osteopathin Sonja Greimel" src="images/banner-mobile.jpg" style="display: none;" >
         <div class="img-centered"><p class="white-text">Herzlich Willkommen!</p></div>
     </div>
+
+
+
+
     <div class="container">
+      <br class="mobile-only">
+          <div class="row center covid-info" style="display: none;">
+          <div class="col s12 m12 center">
+            <div class="card red lighten-2">
+              <div class="card-content white-text">
+                <h3><i class="medium material-icons">masks</i></h3>
+                <span class="card-title"><h5 style="font-weight: 450!important;">COVID-INFORMATION</h5></span>
+                <br>
+                <p>
+								
+						
+								Bitte trage während deiner ganzen Behandlung eine FFP2-Maske und bringe dein eigenes Handtuch zu deinem Termin mit.
+                  Weitere Informationen zu den aktuellen Corona-Regelungen findest du unter den beiden Links unten.
+                </p>
+              </div>
+              <div class="card-action covid-link">
+                <a href="https://www.sozialministerium.at/Informationen-zum-Coronavirus/Coronavirus---Aktuelle-Ma%C3%9Fnahmen.html">Aktuelle Maßnahmen - sozialministerium</a>
+                <a href="https://www.wko.at/branchen/gewerbe-handwerk/fusspfleger-kosmetiker-masseure/coronavirus-infos-fusspfleger-kosmetiker-masseure.html">Coronavirus Infos bei Heilmassagen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="section">
             <!--   Icon Section   -->
             <div class="row">
                 <div class="col s12 m12 center">
                     <h2>Darf ich mich vorstellen?</h2>
-                    <p>Mein Name ist Sonja Greimel, ich bin Osteopathin, staatlich geprüfte Heilmasseurin und Medizinische Masseurin. Ich therapiere
-                        in der kleinen obersteirischen Gemeinde Lassing, in der Ordination unserer Hausärztin Dr. Karin Salfellner. Meine Ausbildung begann
-                        als Medizinische Masseurin im Ausbildungszentrum Dr. Bergler in Graz und führte mich weiter zur staatlich geprüften Heilmasseurin. Heute
-                        bin ich ausgebildete Osteopathin.
-                        <br>
-                        Meine Grundsatz ist es, meine Patienten un deren Probleme ganzheitlich zu betrachten um so die optiale
-                        für den Patienten am besten abgestimmte Therapie zu finden.
+                    <p>Mein Name ist Sonja Greimel, ich bin Osteopathin, staatlich geprüfte Heilmasseurin und Medizinische Masseurin. Ich behandle in der kleinen
+                      obersteirischen Gemeinde Lassing, in der Ordination unserer Hausärztin Dr. Karin Salfellner. Nachdem ich meine Ausbildung als Medizinische
+                      Masseurin und als staatlich geprüfte Heilmasseurin im Ausbildungszentrum Dr. Bergler in Graz abgeschlossen hatte, startete ich meine selbstständige
+                      Tätigkeit. Vor 5 Jahren begann ich meine Fähigkeiten in einem neuen Bereich zu erweitern und startet meine Ausbildung zur Osteopathin. Heute, nach
+                      1350 Ausbildungsstunden, darf ich mich nach erfolgreich abgeschlossener Prüfung als ausgebildete Osteopathin bezeichnen.
+                    <br><br></p>
+                    <p style="font-weight: 600;">Mein oberster Grundsatz ist die ganzheitliche Betrachtung meiner Klienten und steht dadurch im Mittelpunkt meiner Therapie.
+
                     </p>
                 </div>
             </div>
@@ -123,7 +141,7 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/ost.jpg">
+                          <img class="activator" alt="Osteopathin" src="images/ost.jpg">
                         </div>
                         <div class="card-content">
                           <span class="card-title activator ">Osteopathin<i class="material-icons right">more_vert</i></span>
@@ -132,8 +150,8 @@
                         <div class="card-reveal">
                           <span class="card-title">Wie wirkt Osteopathie?<i class="material-icons right">close</i></span>
                           <p>Osteopathie baut auf den körpereigenen Selbstheilungs- und Selbstregulationskräften auf. Krankheiten und Störungen entstehen oftmals dadurch, dass der Körper die Fähigkeit zur Selbstregulierung verliert. An diesem Punkt setzt die Osteopathie an und mobilisiert die Selbstheilungskräfte des Körpers.
-                            bausteine ganzheitliche gaanzen körper zusammen
-                            Jedes Körperteil, jedes Organ benötigt zum optimalen Funktionieren ausreichende Bewegungsfreiheit. Ziel osteopathischer Behandlungen ist es, Blockaden und Gewebespannung zu lösen und somit die Beweglichkeit wiederherzustellen. Osteopathen forschen dabei immer nach den Ursachen von Beschwerden und beschränken sich nicht auf die Behandlung einzelner Symptome. Es werden also keine Krankheiten im eigentlichen Sinne behandelt, sondern deren Auslöser, wie beispielsweise Bewegungsstörungen. (www.osteopathie.de)</p>
+                            <br><br>
+                            Jedes Körperteil, jedes Organ benötigt zum optimalen Funktionieren ausreichende Bewegungsfreiheit. Ziel osteopathischer Behandlungen ist es, Blockaden und Gewebespannung zu lösen und somit die Beweglichkeit wiederherzustellen. Osteopathen forschen dabei immer nach den Ursachen von Beschwerden und beschränken sich nicht auf die Behandlung einzelner Symptome. Es werden also keine Krankheiten im eigentlichen Sinne behandelt, sondern deren Auslöser, wie beispielsweise Bewegungsstörungen. <br>(www.osteopathie.de)</p>
                         </div>
                       </div>
                 </div>
@@ -141,32 +159,46 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/csa.jpg">
+                          <img class="activator" alt="Cranio Scrale Therapeutin" src="images/csa.jpg">
                         </div>
                         <div class="card-content">
                           <span class="card-title activator">Cranio Sacrale Therapeutin<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          ruhe hand bach langsam ruhe
-                          <span class="card-title">Was macht eine Medizinische Masseurin?<i class="material-icons right">close</i></span>
-                          <p>Medizinische MasseurInnen führen klassische Massagen, Packungsanwendungen, Thermotherapie, Ultraschalltherapie und Spezialmassagen zu Heilzwecken durch. Sie arbeiten nach ärztlicher Anordnung und unter Aufsicht von ÄrztInnen oder selbstständig tätigen PhysiotherapeutInnen. Sie verabreichen z.B. Moor- und Fangopackungen und führen Lymphdrainagen, Bindegewebsmassagen und Akupunkturmassagen durch.
-                            Mit einer entsprechenden Zusatzqualifikation können Medizinische MasseurInnen auch Elektrotherapien – Anwendungen von elektrischem Strom zu Heilzwecken – oder Wasserheil- und Bäderheilbehandlungen (Hydro- und Balneotherapie) durchführen.(berufslexikon.at)</p>
+                          <span class="card-title">Was macht eine Cranio Sacrale Therapeutin?<i class="material-icons right">close</i></span>
+                          <p>Eine Cranio Sacrale Therapeutin führt eine manuelle Behandlungsform durch, bei der mittels sanfter Körperberührungen die natürlichen Selbstheilungsmechanismen im Körper aktiviert werden.
+                            <br>
+                            <br>
+                            Die Cranio Sacral Therapie hat sich in der ersten Hälfte des 20. Jahrhunderts in den USA aus der Osteopathie entwickelt. Sie basiert auf der Arbeit mit dem craniosacralen Rhythmus, der sich im feinen Pulsieren der Gehirn- und Rückenmarksflüssigkeit zeigt. Diese Flüssigkeit schützt, nährt und bewegt das Nervensystem – vom Schädel (Cranium) bis zum Kreuzbein (Sacrum). Der craniosacrale Rhythmus ist über das Bindegewebe im ganzen Körper tastbar. Das Bindegewebe (Faszien) gilt als informationsverarbeitendes System, das unseren Körper stützt und schützt und alle Organe und Gefäße umhüllt.<br>
+                            (minimed.at)
+
+                          </div>
                         </div>
-                      </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/h-ma.jpg">
+                          <img class="activator" alt="Heilmasseurin" src="images/h-ma.jpg">
                         </div>
                         <div class="card-content">
                           <span class="card-title activator  ">Heilmasseurin<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          massieren hände entspannen therapie
-                          <span class="card-title">Was mach eine staatlich geprüfte Heilmasseurin?<i class="material-icons right">close</i></span>
-                          <p>HeilmasseurInnen führen klassische Massagen, Packungsanwendungen, Thermotherapie, Ultraschalltherapie und Spezialmassagen zu Heilzwecken durch. Sie arbeiten nach ärztlicher Anordnung, sind bei der Durchführung der Behandlung aber eigenverantwortlich (Durchführungsverantwortung). Mit einer entsprechenden Zusatzqualifikation können HeilmasseurInnen auch Elektrotherapien – Anwendungen von elektrischem Strom zu Heilzwecken – oder Wasserheil- und Bäderheilbehandlungen (Hydro- und Balneotherapie) durchführen.(berufslexikon.at)</p>
+                          <span class="card-title">Was mach ich als staatlich geprüfte Heilmasseurin?<i class="material-icons right">close</i></span>
+                          <p>
+
+
+                            Bei der Heilmassage geht es um die Behandlung von Haut, Bindegewebe, Sehnen und Muskeln durch Druck- und Zugreize. Dadurch wird die Durchblutung von
+                            Organen und Gewebe angeregt.
+                            <br><br>
+                            Mit speziellen Grifftechniken werden dabei Reize auf Unterhaut, Muskulatur und tiefergelegenes Gewebe
+                            ausgeübt. Auf diese Weise wird der Lymphfluss angeregt, sodass die Erholungsphase beispielsweise nach einer Sportverletzung beschleunigt
+                            wird. Außerdem werden Verspannungen gelöst, die Beweglichkeit steigt und durch verkrampfte Muskeln ausgelöste Schmerzen nehmen ab. Die
+                            bekannteste Form der Heilmassage ist die klassische Massage, daneben gibt es weitere Formen wie z.B. Bindegewebs- oder Reflexzonenmassage.<br>
+                            (minimed.at)
+
+                          </p>
                         </div>
                       </div>
                 </div>
@@ -184,7 +216,7 @@
             <h5 class="header col s12"><b>Marcus Tullius Cicero</b></h5>
         </div>
 
-        <div class="parallax"><img src="images/_mountain.jpeg" alt="Unsplashed background img 2"></div>
+        <div class="parallax"><img src="images/_mountain.jpeg" alt="Berge - Hintergrundbild"></div>
     </div>
 
     <div class="container">
@@ -267,15 +299,18 @@
                           <div class="col s12 m12">
                             <div class="card-panel white">
                               <span class="">
-                                <h5>Wie lange dauert eine Behandlung?</h5>
+                                <h3><i class="material-icons green-text">access_time</i></h3>
+                                <h5 style="font-weight: 450!important;">Wie lange dauert eine Behandlung?</h5>
                                 <br>
-                                Die Dauer meiner Behandlungen ist nach ihren individuellen
-                                Bedürfnissen angepasst. Plane bitte deshalb für jede Behandlungseinheit ca.
-                                50 Minuten ein. Bei einer reinen Lymphdrainage kann die Behandlszeit auch 30
+                                <p>
+                                Die Dauer meiner Behandlungen ist an deine individuellen
+                                Bedürfnisse angepasst. Plane bitte deshalb für jede Behandlungseinheit <br> rund
+                                50 Minuten ein. Bei einer reinen Lymphdrainage kann die Behandlungszeit auch 30
                                 Minuten betragen.
                                 <br><br>
                                 Bringe zur Erstbehandlung bitte alle vorhandene Befunde, Röntgenbilder sowie
-                                eine bequeme Kleidung mit.
+                               bequeme Kleidung mit.
+                             </p>
                               </span>
                             </div>
                           </div>
@@ -285,14 +320,17 @@
                           <div class="col s12 m12">
                             <div class="card-panel white">
                               <span class="">
-                                <h5>Was passiert wenn ich meinen Termin absage?</h5>
+                                <h3><i class="material-icons green-text">info_outline</i></h3>
+                                <h5 style="font-weight: 450!important;">Was passiert wenn ich meinen Termin absage?</h5>
                                 <br>
-                                Wenn der vereinbarte Termin nich wahrgenommen werden kann,
+
+
+                                Wenn der vereinbarte Termin nicht wahrgenommen werden kann,
                                 ersuche ich darum mich so bald als möglich darüber zu informieren.
                                 Beachte dass der Termin nur für dich reserviert ist und im Falle
-                                einer zeitgerechten Absage einem Patienten mit akuten Beschwerden
-                                geholfen werden könnte. Termine die nicht mindestens 24 Stunden
-                                vorher abgesagt werden, werdenzur Gänze in Rechnung gestellt.
+                                einer zeitgerechten Absage dein Termin einem anderen Patienten mit akuten Beschwerden
+                                zur verfügung gestellt werden könnte. Termine die nicht mindestens 24 Stunden
+                                vorher abgesagt werden, werden zur Gänze in Rechnung gestellt.
                                 <br><br>
 
                               </span>
@@ -304,12 +342,14 @@
                           <div class="col s12 m12">
                             <div class="card-panel white">
                               <span class="">
-                                <h5>Mit welchen Kosten muss ich für eine Behandlung rechnen?</h5>
+                                <h3><i class="material-icons green-text">euro_symbol</i></h3>
+                                <h5 style="font-weight: 450!important;">Mit welchen Kosten muss ich für eine Behandlung rechnen?</h5>
+                                <br>
                                 <br>
                                 Die Kosten für eine Behandlung mit osteopatischen Techniken oder für eine
                                 Behandlung in Form einer Heilmassage belaufen sich auf 80€ für eine Einheit
-                                in der Länge von ca. 50 Minuten. Bei reiner Lymphdrainage belaufen sich die Kosten
-                                je nach Dauer der Behandlung auf 37€ für 30 Minuten und 60€ für 50 Minuten
+                                in der Länge von 50 Minuten. Bei reiner Lymphdrainage belaufen sich die Kosten
+                                je nach Dauer der Behandlung auf 37€ für 30 Minuten und 60€ für 50 Minuten.
 
                                 <br><br>
                                 <table class="centered price">
@@ -347,13 +387,8 @@
                                     </tr>
                                   </tbody>
                                 </table>
-                                <br>
-                                Wenn der vereinbarte Termin nich wahrgenommen werden kann,
-                                ersuche ich darum mich so bald als möglich darüber zu informieren.
-                                Der Termin ist nur für dich reserviert und kann im Falle
-                                einer zeitgerechten Absage einem Patienten mit akuten Beschwerden
-                                zu verfügung gestellt werden.
-                                <br><br>Termine die nicht mindestens 24 Stunden vor Behandlungsbeginn abgesagt werden, <br>werden zur Gänze in Rechnung gestellt.
+                                <br><br><b>Beachte bitte, dass Termine die nicht mindestens 24 Stunden vor Behandlungsbeginn <br>
+                                            abgesagt werden zur Gänze in Rechnung gestellt werden müssen.</b>
                                 <br><br>
 
                               </span>
@@ -374,7 +409,7 @@
             <h5 class="header col s12 "><b>Ernst Ferstl</b></h5>
         </div>
 
-        <div class="parallax"><img src="images/steg.jpeg" alt="Unsplashed background img 2"></div>
+        <div class="parallax"><img src="images/steg.jpeg" alt="Steg - Hintergrundbild"></div>
     </div>
     <div id="kontakt" class="container">
         <div class="section">
@@ -382,7 +417,8 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h2><i class="material-icons  green-text large">account_circle</i></h2>
-                    <h4 class="center-align bold">Sonja Greimel</h4>
+                    <h3 class="center-align bold" style="font-weight: 450!important;">Sonja Greimel</h3>
+                    <br>
                     <i id="a" class="material-icons  green-text medium">directions</i>
                     <h5 class="center-align light">Am Lucenac-Platz 1</h5>
                     <h6 class="center-align light">Ordination Dr. Salfellner</h6>
@@ -392,9 +428,9 @@
                     <h5 class="center-align light"><i class="material-icons  green-text medium">mail</i></h5>
                     <h5 class="center-align light">sonja.greimel@gmail.com</h5>
                     <br><br>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1132.6891185348409!2d14.267452438826817!3d47.528786731667395!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8377bad3590964b5!2sHeilmasseurin+Sonja+Greimel!5e0!3m2!1sde!2sat!4v1542909143244"
-                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="google-maps">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,21 +443,32 @@
             <h5 class="header col s12 "><b>Ralph Waldo Emerson</b></h5>
         </div>
 
-        <div class="parallax"><img src="images/_train.jpg" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="images/_train.jpg" alt="Berge und Sonne - Hintergrundbild"></div>
     </div>
-    <footer class="page-footer green ">
+    <footer class="page-footer brown ">
         <div class="container">
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col s12 m4">
                     <h5 id="links" class="white-text">Links</h5>
                     <ul>
                         <li><a class="white-text" href="http://www.arztlassing.at">Arzt Lassing</a></li>
-                        <div class="fb-like" data-href="https://www.facebook.com/heilmasseurin.lassing/"
-                            data-layout="button" data-action="like" data-size="small" data-show-faces="true"
-                            data-share="true"></div>
-                    </ul>
+                        <link rel="stylesheet" href="css/font-awesome.min.css">
+                        <!-- Add font awesome icons -->
+                        <br>
+
+                        </ul>
+
                 </div>
-                <div class="col s12 m6">
+
+                <div class="col s12 m4 center">
+                  <a href="https://www.facebook.com/heilmasseurin.lassing/">
+					  <i class="material-icons blue-text medium " style="display: block;
+    margin-left: auto;
+    margin-right: auto">facebook</i>
+				  </a>
+                </div>
+
+                <div class="col s12 m4">
                     <h5 class="white-text right"><a href="impressum.html" class="white-text">Impressum</a></h5>
                     <br>
                 </div>
@@ -433,21 +480,35 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	
+	
+	<div class="cookie-consent-banner">
+  <div class="cookie-consent-banner__inner">
+    <div class="cookie-consent-banner__copy">
+      <div class="cookie-consent-banner__header">Diese Website verwendet Cookies</div>
+      <div class="cookie-consent-banner__description">Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, um 
+        Social-Media-Funktionen und zur Analyse unseres Datenverkehrs. Außerdem geben wir Informationen über Ihre Nutzung unserer Website an unsere Partner in den sozialen Medien weiter, 
+        Werbe- und Analysepartnern, die diese mit anderen Informationen kombinieren können, die Sie ihnen zur Verfügung gestellt haben oder die sie aus Ihrer Nutzung ihrer Dienste gesammelt haben. 
+        aus Ihrer Nutzung ihrer Dienste. Sie stimmen unseren Cookies zu, wenn Sie unsere Website weiter nutzen.</div>
+    </div>
+
+    <div class="cookie-consent-banner__actions">
+      <a onclick="onAcceptCookies()" class="cookie-consent-banner__cta">
+        Ok
+      </a>
+      
+      <a onclick="onDismissCookies()" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+        Ablehnen
+      </a>
+    </div>
+  </div>
+</div>
+
+	
+    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/materialize.min.js"></script>
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id))
-                return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.12';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 </body>
 
 </html>
